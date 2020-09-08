@@ -14,7 +14,7 @@ function handleSubmit(event) {
     const currentValue = input.value;
     paintGreeting(currentValue);
     saveName(currentValue);  
-
+    // 왜 잔디가 안심어지냐 왜 안심어지냐 왜
 }
 
 function askForName() {
