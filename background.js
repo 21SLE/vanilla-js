@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 
-const IMAGE_NUMBER = 5; //갖고있는 이미지 개수
+const IMAGE_NUMBER = 6; //갖고있는 이미지 개수
 
 function paintImage(imgNumber) {
     const image = new Image();
