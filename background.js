@@ -11,7 +11,7 @@ function paintImage(imgNumber) {
 }
 
 function genRandom() {
-    const number = Math.floor(Math.random() * 3);
+    const number = Math.floor(Math.random() * IMAGE_NUMBER);
     return number;
 
 }
