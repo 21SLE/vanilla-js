@@ -137,14 +137,16 @@ body {
     width:15%;
     
 }
-.toDoList li span {
-    text
-}
+
 .toDoList button {
     background-color: rgba(0,0,0,0);
     border:none;
     font-size: 18px;
-} 
+}   
+.toDoList button:focus {
+    outline:none;
+}
+
 .weather {
     display: block;
     position: absolute;
