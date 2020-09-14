@@ -213,7 +213,7 @@ body {
         border-bottom: white solid 2px ;
         color: white;
         padding-top:15px;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
     }
     .form input::placeholder {
         color:white;
@@ -257,7 +257,7 @@ body {
         border-bottom: white solid 2px ;
         color: white;
         padding-top:15px;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
     
     }
     .toDoForm input::placeholder {
