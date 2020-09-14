@@ -173,3 +173,152 @@ body {
     animation: fadeIn 0.5s linear;
 }
 
+/*********모바일쿼리********/
+
+@media screen and (max-width:645px) {
+    
+    .date {
+        display:block;
+        text-align: center;
+        padding-top: 140px;
+        margin-bottom: 10px;
+        color:white;
+        font-size: 20px;
+    }
+    
+    .clock {
+        width:100%;
+        display :block;
+        text-align:center;
+        font-size: 40px;
+        margin-top:-30px;
+        margin-bottom: -35px;
+        
+        padding-bottom:0;
+        
+    }
+    
+    .form {
+        padding-top: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+         
+    }
+    .form input {
+        
+        width: 180px;
+        background-color:rgba(0,0,0,0);
+        border:none;
+        border-bottom: white solid 2px ;
+        color: white;
+        padding-top:5px;
+        padding-bottom: 5px;
+    }
+    .form input::placeholder {
+        color:white;
+        font-size: 20px;
+    }
+    @keyframes fadeInOut {
+        0% {
+            border-bottom: white solid 2px;
+        }
+        100% {
+            border-bottom: rgba(0,0,0,0) solid 2px;
+        }
+    }
+    .form input:focus {
+        border: none;
+        outline:none;
+        border-bottom: white solid 2px;
+        animation: fadeInOut 0.3s ease-in-out forwards;
+    }
+    .greetings {
+        width:100%;
+        padding-top: 10px;
+        display :block;
+        text-align:center;
+        font-size: 25px;
+    }
+    
+    .toDoForm{
+        width:100%;
+        display:block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 15px;
+        
+    }
+    
+    .toDoForm input {
+        background-color:rgba(0,0,0,0);
+        border:none;
+        border-bottom: white solid 2px ;
+        color: white;
+        padding-bottom: 5px;
+    
+    }
+    .toDoForm input::placeholder {
+        color:white;
+        font-size: 20px;
+    }
+    
+    .toDoForm input:focus {
+        border: none;
+        outline:none;
+        border-bottom: white solid 2px;
+        animation: fadeInOut 0.3s ease-in-out forwards;
+    }
+    .toDoForm button {
+        background-color: rgba(0,0,0,0);
+        border:none;
+        font-size: 18px;
+        color: white;
+    }
+    .toDoForm button:focus{
+        outline:none;
+    }
+    .toDoList{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .toDoList li{
+        list-style-type: none;
+        width:65%;
+        
+    }
+    
+    .toDoList button {
+        background-color: rgba(0,0,0,0);
+        border:none;
+        font-size: 18px;
+    }   
+    .toDoList button:focus {
+        outline:none;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .bgImage {
+        position:absolute;
+        top:0;
+        left:0;
+        width: auto;
+        height:100%;
+        
+        z-index:-1;
+        animation: fadeIn 0.5s linear;
+    }
+    
+    
+    }
