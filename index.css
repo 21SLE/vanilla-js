@@ -206,7 +206,6 @@ body {
          
     }
     .form input {
-        
         width: 180px;
         background-color:rgba(0,0,0,0);
         border:none;
@@ -219,14 +218,7 @@ body {
         color:white;
         font-size: 20px;
     }
-    @keyframes fadeInOut {
-        0% {
-            border-bottom: white solid 2px;
-        }
-        100% {
-            border-bottom: rgba(0,0,0,0) solid 2px;
-        }
-    }
+ 
     .form input:focus {
         border: none;
         outline:none;
