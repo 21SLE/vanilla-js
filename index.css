@@ -180,7 +180,7 @@ body {
     .date {
         display:block;
         text-align: center;
-        padding-top: 140px;
+        padding-top: 120px;
         margin-bottom: 10px;
         color:white;
         font-size: 20px;
@@ -191,7 +191,7 @@ body {
         display :block;
         text-align:center;
         font-size: 40px;
-        margin-top:-30px;
+        margin-top:-45px;
         margin-bottom: -35px;
         
         padding-bottom:0;
@@ -240,7 +240,7 @@ body {
         align-items: center;
         text-align: center;
         padding-top: 15px;
-        
+        margin-top:-10px;
     }
     
     .toDoForm input {
@@ -293,15 +293,7 @@ body {
     .toDoList button:focus {
         outline:none;
     }
-    
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+  
     .bgImage {
         position:absolute;
         top:0;
@@ -314,4 +306,19 @@ body {
     }
     
     
+}
+@media screen and (max-width:566px) {
+    
+}
+@media screen and (max-width:1100px) {
+    .bgImage {
+        position:absolute;
+        top:0;
+        left:0;
+        width: auto;
+        height:100%;
+        
+        z-index:-1;
+        animation: fadeIn 0.5s linear;
     }
+}

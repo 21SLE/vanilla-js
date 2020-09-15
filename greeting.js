@@ -5,6 +5,8 @@ const form = document.querySelector(".js-form"),
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
 
+const media = window.matchMedia("screen and (max-width:645px)");
+
 function saveName(text) {
     localStorage.setItem(USER_LS, text);
 }
@@ -24,7 +26,13 @@ function askForName() {
 function paintGreeting(text) {
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}, have a nice day! 😘❤️😆❤️👍❤️`;
+    if(media.matches) {
+        greeting.innerHTML = `Hello ${text}, have a nice day! <br>😘❤️😆❤️👍❤️`;
+    }else {
+        greeting.innerHTML = `Hello ${text}, have a nice day! 😘❤️😆❤️👍❤️`;
+    }
+
+    
 }
 
 function loadName() {
