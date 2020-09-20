@@ -41,13 +41,6 @@ function paintToDo(text) {
     toDos.push(toDoObj);
     saveToDos();
 }
-function handleSubmit(event) {
-    event.preventDefault();
-    const currentValue = toDoInput.value;
-    paintToDo(currentValue);
-    toDoInput.value=""; //새로고침되는거랑 비슷하게 작용. 사용자가 쓴 값을 다시 지워주는것
-}
-
 function loadToDos() {
     const loadedToDos = localStorage.getItem(TODOS_LS);
     if(loadedToDos !== null) {
@@ -57,6 +50,14 @@ function loadToDos() {
         })
     }
 }
+
+function handleSubmit(event) {
+    event.preventDefault();
+    const currentValue = toDoInput.value;
+    paintToDo(currentValue);
+    toDoInput.value=""; //새로고침되는거랑 비슷하게 작용. 사용자가 쓴 값을 다시 지워주는것
+}
+
 
 
 function init() {
